@@ -54,5 +54,8 @@
   },
   "dependencies": {
     "classnames": "^2.3.2"
-  }
+  },
+  "files": [
+    "/lib"
+  ]
 }
