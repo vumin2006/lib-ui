@@ -1,5 +1,5 @@
 {
-  "name": "lib-ui",
+  "name": "@vumin/test-lib-ui",
   "version": "1.0.0",
   "description": "Core UI",
   "main": "lib/index.js",
@@ -22,7 +22,6 @@
     "typescript"
   ],
   "author": "VuMin",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.21.5",
