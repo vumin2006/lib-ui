@@ -7,7 +7,7 @@ const meta: Meta<typeof Button> = {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    textColor: { control: "color" },
+    // textColor: { control: "color" },
     onClick: { action: "clicked" },
   },
 };
@@ -17,26 +17,25 @@ export default meta;
 // The story type for the component https://storybook.js.org/docs/react/api/csf#named-story-exports
 type Story = StoryObj<typeof Button>;
 
+export const Default: Story = {
+  args: {
+    label: "Button",
+    variant: "default",
+    size: "default",
+  },
+};
+
 export const Primary: Story = {
   args: {
-    label: "Primary",
-    size: "large",
-    type: "primary",
+    ...Default.args,
+    variant: "primary",
+    size: "default",
   },
 };
-
-export const Secondary: Story = {
+export const Danger: Story = {
   args: {
-    ...Primary.args,
-    type: "secondary",
-    label: "Secondary",
-  },
-};
-
-export const medium: Story = {
-  args: {
-    ...Primary.args,
-    size: "medium",
-    label: "medium",
+    ...Default.args,
+    variant: "danger",
+    size: "default",
   },
 };
