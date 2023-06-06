@@ -1,6 +1,7 @@
 import React from "react";
 import "./color.css";
 import { colors, colorCommon } from "../../tokens";
+import { COLORS } from "../..";
 
 export type IColor = {
   type?: "default" | "common";

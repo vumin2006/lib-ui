@@ -1,6 +1,6 @@
 {
   "name": "test-lib-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Core UI",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
